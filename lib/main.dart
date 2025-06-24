@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/Home.dart';
+import 'package:news/view/note_view.dart';
 
 void main() => runApp(Myapp());
 
@@ -9,8 +9,9 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: const NoteView(),
     );
   }
 }
