@@ -12,16 +12,13 @@ class NoteViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 50),
-          CustomAppbar(),
-          Expanded(
-            child: ListNote()
-          ),
+          CustomAppbar(title: 'Note', myIcon: Icon(Icons.search, size: 28)),
+          Expanded(child: ListNote()),
         ],
       ),
     );
   }
 }
-
 
 class ListNote extends StatelessWidget {
   const ListNote({super.key});
@@ -32,9 +29,9 @@ class ListNote extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 16),
       child: ListView.builder(
         padding: EdgeInsets.zero,
-                itemCount: 4,
-                itemBuilder: (context, index) =>const NoteItem(),
-              ),
+        itemCount: 4,
+        itemBuilder: (context, index) => const NoteItem(),
+      ),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/view/edit_note.dart';
 import 'package:news/view/note_view.dart';
 
 void main() => runApp(Myapp());
